@@ -22,7 +22,7 @@ process_expfactory_experiment <- function(path) {
 #' Process expfactory survey data.
 #' @param token token number
 #' @param survey path to JSON survey file
-#' @param unflatten=FALSE Unflatten "flat" JSON
+#' @param flat=FALSE Unflatten "flat" JSON
 #' @keywords expfactory
 #' @export
 #' @return Data frame (long format)
