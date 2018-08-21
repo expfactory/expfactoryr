@@ -7,7 +7,8 @@ RUN mkdir -p /code /data
 COPY . /code
 
 # Install expfactory-r into container package
-RUN R -e "devtools::install_local('/code', quiet=FALSE)"
+RUN R -e "devtools::install_local('/code', quiet=FALSE)" && \
+    chmod u+x /code/docker/run.sh
 
 # To test, the user will mount to /code
 WORKDIR /code
