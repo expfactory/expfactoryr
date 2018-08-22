@@ -21,8 +21,17 @@ docker build -f docker/Dockerfile -t vanessa/expfactory-r .
 ### Usage
 
 To use the container, you should mount your experiment package directory to
-`/code`.
+`/code`. For example, if we have an experiment testing folder called "stroopr"
+in our present working directory, we would run:
 
 ```bash
-docker run -v stroopr:/data vanessa/expfactory-r test
+docker run -v $PWD:/stroopr:/data vanessa/expfactory-r test
+```
+
+And the package would be installed, and tested per:
+
+```
+devtools::install_deps(dependencies=TRUE)
+devtools::check()
+devtools::test()
 ```

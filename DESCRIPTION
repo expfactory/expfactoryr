@@ -14,4 +14,5 @@ Imports:
   jsonlite
 RoxygenNote: 6.0.1
 Suggests: 
-  testthat (>= 1.2.0)
+  testthat (>= 1.2.0),
+  roxygen2 (>= 5.0.0)
