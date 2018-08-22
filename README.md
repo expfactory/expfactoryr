@@ -24,5 +24,5 @@ To use the container, you should mount your experiment package directory to
 `/code`.
 
 ```bash
-docker run -v stroopr:/code vanessa/expfactory-r
+docker run -v stroopr:/data vanessa/expfactory-r test
 ```

@@ -13,4 +13,5 @@ Imports:
   tidyverse,
   jsonlite
 RoxygenNote: 6.0.1
-Suggests: testthat
+Suggests: 
+  testthat (>= 1.2.0)

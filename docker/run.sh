@@ -1,23 +1,42 @@
 #!/bin/bash
 
-if [ "$#" -ne 1 ];
-    then
-    echo "Usage: /install.sh <expfactory-package-folder>"
-fi
+function usage() {
+    echo "Usage: /run.sh <command> <args>"
+}
 
-# The directory must exist, and be a directory
-if [ ! -d "${EXPFACTORY_PACKAGE}" ]
+if [ "$#" -eq 0 ]
     then
-    echo "Cannot find ${EXPFACTORY_PACKAGE}"
+    usage
     exit 1
 fi
 
 
-EXPFACTORY_PACKAGE="${1}"
+while true; do
+    case ${1:-} in
+        -h|--help|help)
+            usage
+            exit
+        ;;
+        test|--test)
+            shift
+            EXPFACTORY_PACKAGE=${1:-/data} 
+            export EXPFACTORY_PACKAGE
 
-echo "Found ${EXPFACTORY_PACKAGE}"
-ls
-cd "${EXPFACTORY_PACKAGE}"
-R -e 'devtools::install_deps(dependencies = TRUE)'
-R -e 'devtools::check()'
-R -e 'devtools::test()'
+            # The directory must exist, and be a directory
+            echo "Found ${EXPFACTORY_PACKAGE}"
+            ls
+            cd "${EXPFACTORY_PACKAGE}"
+            R -e 'devtools::install_deps(dependencies=TRUE)'
+            R -e 'devtools::check()'
+            R -e 'devtools::test()'
+            exit 0
+        ;;
+        -*)
+            echo "Unknown option: ${1:-}"
+            exit 1
+        ;;
+        *)
+            break
+        ;;
+    esac
+done
