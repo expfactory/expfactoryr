@@ -4,7 +4,9 @@
         "RepoTags": [
             "expfactory/expfactoryr:e82721ac96"
         ],
-        "RepoDigests": [],
+        "RepoDigests": [
+            "expfactory/expfactoryr@sha256:503fab12d03224813464dec343200932da2bb1350f68b6bdc4476bd9eef9b0d7"
+        ],
         "Parent": "",
         "Comment": "",
         "Created": "2018-08-24T20:03:04.267204753Z",
