@@ -1,0 +1,131 @@
+[
+    {
+        "Id": "sha256:eae4d0ccba96837541ef2124c8312dc8f548cfd6c5cad97522d2288ec50ecf63",
+        "RepoTags": [
+            "expfactory/expfactoryr:e73e4c6020"
+        ],
+        "RepoDigests": [
+            "expfactory/expfactoryr@sha256:510086a20faa54e3a186e2a74d0911e0dfaaa9f5ee7881d38d65b1c8b6e29b56"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2018-08-24T19:40:55.625288385Z",
+        "Container": "41a5a3fac4a08f88c1495c8aa44434e739978844f269b8aead7ecb37a4e480cf",
+        "ContainerConfig": {
+            "Hostname": "41a5a3fac4a0",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8787/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "R_VERSION=3.5.1",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "TERM=xterm",
+                "S6_VERSION=v1.21.4.0",
+                "S6_BEHAVIOUR_IF_STAGE2_FAILS=2"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "ENTRYPOINT [\"/bin/bash\" \"/code/docker/run.sh\"]"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:7e5d210b5dcb3545f2354531a138880f330711c6427bdc235592318f2f467f91",
+            "Volumes": {
+                "/home/rstudio/kitematic": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "/bin/bash",
+                "/code/docker/run.sh"
+            ],
+            "OnBuild": [],
+            "Labels": {
+                "maintainer": "vsochat@stanford.edu",
+                "org.label-schema.license": "GPL-2.0",
+                "org.label-schema.vcs-url": "https://github.com/rocker-org/rocker-versioned",
+                "org.label-schema.vendor": "Rocker Project"
+            }
+        },
+        "DockerVersion": "17.09.0-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8787/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "R_VERSION=3.5.1",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "TERM=xterm",
+                "S6_VERSION=v1.21.4.0",
+                "S6_BEHAVIOUR_IF_STAGE2_FAILS=2"
+            ],
+            "Cmd": null,
+            "ArgsEscaped": true,
+            "Image": "sha256:7e5d210b5dcb3545f2354531a138880f330711c6427bdc235592318f2f467f91",
+            "Volumes": {
+                "/home/rstudio/kitematic": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "/bin/bash",
+                "/code/docker/run.sh"
+            ],
+            "OnBuild": [],
+            "Labels": {
+                "maintainer": "vsochat@stanford.edu",
+                "org.label-schema.license": "GPL-2.0",
+                "org.label-schema.vcs-url": "https://github.com/rocker-org/rocker-versioned",
+                "org.label-schema.vendor": "Rocker Project"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1805367920,
+        "VirtualSize": 1805367920,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "aufs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:3b10514a95bec77489a57d6e2fbfddb7ddfdb643907470ce5de0f1b05c603706",
+                "sha256:fab1a4b545ee82b98c16496408e48dc1cf3464220874684c2ce2a0ee4d8f92f3",
+                "sha256:ef263e44b1887a7a54aa99ec38814ef92a9bb8714e32c834a44af488e181d639",
+                "sha256:7100e253a9bcda13ebaf71c6c758a85d22e7d9e506644d8d4ee31d73322507a3",
+                "sha256:ef1aa5a346ae5d0c59290b6d9a0d1dc4e249d25935cc26dfe48fe4c883148c81",
+                "sha256:bcaf888eafedfa691be4eb38350e127cd4ca4326a1d5a009c75cec8b8dc810af",
+                "sha256:a3f44880736393e02b3bff12d6b037f88049c41e0c4eb3edfedba7a1c3a73bfa",
+                "sha256:2497b2562f2a8d81cb0fe6cc48098a9a6e43c00bbb14491f7c6fb1d6735d3238",
+                "sha256:0bf9743a387201f666b75c3ea4c5b936c64e2399fd3facc4852539e1e587f11c",
+                "sha256:8c8c6bd1b70096f514718b002c6113890096114f04eb3b13284a1e7bc7836a1b",
+                "sha256:69cf6a9ef063391f4de77319aee7f1458c70554678063591168f19ff49b8f600"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
