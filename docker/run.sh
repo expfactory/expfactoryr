@@ -4,12 +4,19 @@ function usage() {
     echo "Usage: /run.sh <command> <args>"
 }
 
+function check_return_value() {
+    RETVAL=${1}
+    if [ "${RETVAL}" -ne 0 ]
+        then
+            exit ${RETVAL}
+    fi
+}
+
 if [ "$#" -eq 0 ]
     then
     usage
     exit 1
 fi
-
 
 while true; do
     case ${1:-} in
@@ -27,8 +34,11 @@ while true; do
             ls
             cd "${EXPFACTORY_PACKAGE}"
             R -e 'devtools::install_deps(dependencies=TRUE)'
+            check_return_value $?
             R -e 'devtools::check()'
+            check_return_value $?
             R -e 'devtools::test()'
+            check_return_value $?
             exit 0
         ;;
         -*)
