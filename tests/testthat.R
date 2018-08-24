@@ -1,4 +1,4 @@
 library(testthat)
-library(expfactoryr)
+library(expfactory)
 
-test_check("expfactoryr")
+test_check("expfactory")

@@ -1,4 +1,4 @@
-Package: expfactoryr
+Package: expfactory
 Type: Package
 Title: The Experiment Factory Data Processing in R
 Version: 0.1.0
