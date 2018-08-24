@@ -21,7 +21,6 @@ defaults: &defaults
   environment:
     - TZ: "/usr/share/zoneinfo/America/Los_Angeles"
 
-
 # Installation
 install: &install
     name: Install parallel gzip, gettext, python3, and jq

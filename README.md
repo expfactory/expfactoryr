@@ -25,7 +25,7 @@ To use the container, you should mount your experiment package directory to
 in our present working directory, we would run:
 
 ```bash
-docker run -v $PWD:/stroopr:/data vanessa/expfactory-r test
+docker run -v $PWD:/stroopr:/data expfactory/expfactoryr test
 ```
 
 And the package would be installed, and tested per:
