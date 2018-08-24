@@ -6,7 +6,7 @@ Author: Paul Sharpe
 Maintainer: <paul@miraclefish.com>
 Description: The Experiment Factory Data Processing in R
     Generic data processing.
-License:  BSD 3-Clause License
+License: BSD_3_clause + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
