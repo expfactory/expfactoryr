@@ -6,7 +6,8 @@ RUN mkdir -p /code
 LABEL maintainer vsochat@stanford.edu
 ADD . /code
 WORKDIR /code
-RUN R -e "devtools::install_local('/code', quiet=FALSE, dependencies=TRUE)" && \
+RUN apt-get update && apt-get install -y texlive && \
+    R -e "devtools::install_local('/code', quiet=FALSE, dependencies=TRUE)" && \
     chmod u+x /code/docker/run.sh && \
     echo "Running devtools checks and tests for expfactoryr" && \
     R -e 'devtools::check()' && \
