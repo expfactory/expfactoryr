@@ -1,16 +1,16 @@
 [
     {
-        "Id": "sha256:acee1f49245e9135b699862e65fbda5a3455f0fc898b3340e073c31cc2a60eec",
+        "Id": "sha256:47e32ba9bac8696a4c074399c61eb4ad3471ce08191983689fb1e8b8f9a52929",
         "RepoTags": [
-            "expfactory/expfactoryr:e632f254ae"
+            "expfactory/expfactoryr:8ec8feb7c1"
         ],
         "RepoDigests": [],
         "Parent": "",
         "Comment": "",
-        "Created": "2018-08-26T22:32:20.314097315Z",
-        "Container": "ee1ae24fae4f351aeb94a70ec99270e4def5baf897271c8fd29acb6a7e204fcd",
+        "Created": "2018-08-26T22:37:10.395783274Z",
+        "Container": "a34f660f2e1534cc37a9620c6a23a9193f135eb46471554163f797d8a76992eb",
         "ContainerConfig": {
-            "Hostname": "ee1ae24fae4f",
+            "Hostname": "a34f660f2e15",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
@@ -38,7 +38,7 @@
                 "ENTRYPOINT [\"/bin/bash\" \"/code/docker/run.sh\"]"
             ],
             "ArgsEscaped": true,
-            "Image": "sha256:68059f957773f2c0fdd65c26c46371a774aebfcabf4cc4a4c5329c2e049b59ff",
+            "Image": "sha256:5ea7d8fcc473a3ce32fcdc476ca103cda38244173f9fd2c99bdc1e8e5886691e",
             "Volumes": {
                 "/home/rstudio/kitematic": {}
             },
@@ -81,7 +81,7 @@
             ],
             "Cmd": null,
             "ArgsEscaped": true,
-            "Image": "sha256:68059f957773f2c0fdd65c26c46371a774aebfcabf4cc4a4c5329c2e049b59ff",
+            "Image": "sha256:5ea7d8fcc473a3ce32fcdc476ca103cda38244173f9fd2c99bdc1e8e5886691e",
             "Volumes": {
                 "/home/rstudio/kitematic": {}
             },
@@ -100,8 +100,8 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 1806405811,
-        "VirtualSize": 1806405811,
+        "Size": 2790722941,
+        "VirtualSize": 2790722941,
         "GraphDriver": {
             "Data": null,
             "Name": "aufs"
@@ -116,10 +116,10 @@
                 "sha256:cca103d06defbc35d6fe779f66949ea22fbb471d4b715ddd2bb8f097de3aa926",
                 "sha256:ffc4024446a4447508dbb6e19060ca0c8c8916593d5a7fda6bffcfa527901b33",
                 "sha256:25f5f1854da9e541ea74849f776f75542cb0f8084a54029d281a8ef0441e865a",
-                "sha256:0f6ef60fc9cfb2940e51406bea2dc185b8e59dc0f96d87dc47dafe582b4d870a",
-                "sha256:c47670395b8d428e24a3a5ba96872088434dce05e9f040a0dcaa31723fde2552",
-                "sha256:b372358e1070266f31d09d2e0127899345e92e881bb6f1a2adb63eefc75dcf78",
-                "sha256:297444564625514d2f14f84e0f47040e45a6ad7a09f65653eadaa5e6d9e79f2e"
+                "sha256:b3d7e178ad31ce908dc588ca0de5898101d443732e29af2ba6c3159b1b21f44e",
+                "sha256:8d5a77ac0efee1c6278deddb0abec12083e648284de3bf6c7792b006d9d93339",
+                "sha256:c7cce086f3f5a9b596ec75ad0adae80c4a1c6e9e0fcd0a4ceffde2c60262a8c3",
+                "sha256:5000260de8383b67ce5a029ded6b2b2bab8e2c791d6eaf9ad414de0351ead731"
             ]
         },
         "Metadata": {
