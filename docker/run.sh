@@ -30,6 +30,8 @@ while true; do
             R -e 'devtools::install_deps(dependencies=TRUE)'
             # These commands don't return the correct codes, but display better
             echo "devtools::check()"
+            R -e 'devtools::check()'
+            echo "devtools::test()"
             R -e 'devtools::test()'
             # This will return a proper code
             echo "R CMD check ${EXPFACTORY_PACKAGE}"
