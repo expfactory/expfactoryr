@@ -1,4 +1,6 @@
 library(tidyverse)
+library(testthat)
+library('expfactory.breathcounting')
 context('The Experiment Factory')
 
 # experiments
