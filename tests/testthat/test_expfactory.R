@@ -1,5 +1,3 @@
-library(tidyverse)
-library(testthat)
 context('The Experiment Factory')
 
 # experiments

@@ -11,7 +11,7 @@ process_expfactory_survey(token, survey, flat = FALSE)
 
 \item{survey}{path to JSON survey file}
 
-\item{flat=FALSE}{Unflatten "flat" JSON}
+\item{flat}{TRUE means unflatten "flat" JSON (default=FALSE)}
 }
 \value{
 Data frame (long format)
