@@ -8,12 +8,16 @@ if(getRversion() >= "2.15.1")  utils::globalVariables(c('stack','values','ind','
 #' @keywords expfactory
 #' @export
 #' @return Data frame (long format)
-process_expfactory_experiment <- function(path) {
+process_expfactory_experiment <- function(path, local=FALSE) {
   if ( file.exists(path) ) {
-    # POSTed data gets JSON encoded at the remote, so if it's JSON to start,
-    # with it's DOUBLE JSON when written and needs decoding twice
-    l <- jsonlite::read_json(path, simplifyVector = TRUE)
-    jsonlite::fromJSON(unlist(l[1]))
+    if (! local) {
+      # POSTed data gets JSON encoded at the remote, so if it's JSON to start,
+      # with it's DOUBLE JSON when written and needs decoding twice
+      l <- jsonlite::read_json(path, simplifyVector = TRUE)
+      jsonlite::fromJSON(unlist(l[1]))
+    } else {
+      jsonlite::fromJSON(path)
+    }
   } else {
     message(path, ': file not found')
     return(data.frame)
