@@ -1,7 +1,7 @@
 Package: expfactory
 Type: Package
 Title: The Experiment Factory Data Processing in R
-Version: 0.1.0
+Version: 0.1.1
 Author: Paul Sharpe
 Maintainer: <paul@miraclefish.com>
 Description: The Experiment Factory: Generic data processing in R.
