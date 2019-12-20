@@ -1,10 +1,15 @@
-library(tidyverse)
-library(testthat)
 context('The Experiment Factory')
 
 # experiments
 test_that("process_expfactory_experiment() returns a data frame", {
   expect_is(process_expfactory_experiment(path = '../fixtures/attention-network-task-no-feedback-results.json'), 'data.frame')
+})
+
+test_that("process_expfactory_experiment() returns a data frame for locally saved JSON", {
+  expect_is(process_expfactory_experiment(
+      path = '../fixtures/outcome-response-priming-task-results-local.json',
+      local = TRUE),
+    'data.frame')
 })
 
 # surveys

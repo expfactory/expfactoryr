@@ -2,3 +2,9 @@
 
 export(process_expfactory_experiment)
 export(process_expfactory_survey)
+importFrom(dplyr,filter)
+importFrom(dplyr,mutate)
+importFrom(dplyr,rename)
+importFrom(dplyr,select)
+importFrom(magrittr,"%>%")
+importFrom(tidyr,spread)
