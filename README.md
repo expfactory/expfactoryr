@@ -48,3 +48,5 @@ devtools::install_deps(dependencies=TRUE)
 devtools::check()
 devtools::test()
 ```
+
+If you have a question, please don't hesitaite to [open an issue](https://github.com/expfactory/expfactoryr/issues).
