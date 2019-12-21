@@ -24,6 +24,7 @@ The verisons correspond to the first 10 alphanumeric characters of the Github co
 docker pull expfactory/expfactoryr
 ```
 
+
 ### Build
 To build the container locally:
 
