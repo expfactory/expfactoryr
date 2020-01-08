@@ -1,3 +1,17 @@
+#' Reverse code expfactory survey values
+#'
+#' Reverse code expfactory survey values.
+#' @param df data frame containing (long) data for one survey
+#' @param rows integer vector containing row numbers of scores to be reverse coded
+#' @param max integer value of highest possible score
+#' @importFrom magrittr %<>%
+#' @export
+#' @return data frame
+reverse_code_survey <- function(df, rows, max) {
+  df[rows,] %<>% mutate(value = max + 1 - .data$value)
+  df
+}
+
 #' Process expfactory experiment JSON data.
 #'
 #' Most tasks in \href{https://expfactory.github.io/experiments/}{The Experiment Factory library} save their data as JSON.
