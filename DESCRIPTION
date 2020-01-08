@@ -1,7 +1,7 @@
 Package: expfactory
 Type: Package
 Title: The Experiment Factory Data Processing in R
-Version: 0.1.1
+Version: 0.2.0
 Author: Paul Sharpe
 Maintainer: <paul@miraclefish.com>
 Description: The Experiment Factory: Generic data processing in R.
@@ -12,7 +12,9 @@ Imports:
   dplyr,
   magrittr,
   tidyr,
-  jsonlite
+  jsonlite,
+  rlang,
+  utils
 RoxygenNote: 6.1.1
 Suggests: 
   testthat (>= 1.2.0),
